@@ -1,0 +1,39 @@
+
+body{
+    margin:0;
+}
+
+.bloquediv{
+    background-color: rgb(252,225,61);
+    /* margin-bottom: 50px;
+    margin-top: 40px;*/
+    margin-right: 465px;
+    padding: 50px;
+    text-align: center;
+
+
+}
+
+.logo{
+    display: block;
+    /*margin-top: 40px;
+    margin-left: 465px; */
+    width: 500px;
+    height: 404px;
+    margin: auto;
+}
+
+
+
+#superior{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 43px;
+    text-align: center;
+}
+
+a{
+    text-align: center;
+    font-family: "Times New Roman";
+    color: black;
+    font-style: italic;
+}
