@@ -1,0 +1,7 @@
+main {
+    background-color: gainsboro;
+}
+main > div {
+    font-size: 1.1em;
+    color: purple;
+}

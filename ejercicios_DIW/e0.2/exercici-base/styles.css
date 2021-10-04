@@ -1,0 +1,35 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgrey;
+}
+
+header {
+    /* indica el valor de la propietat position i més propietats, si fan falta */
+}
+
+header img {
+    /* indica el valor de la propietat position i més propietats, si fan falta */
+}
+
+ul#menu {
+    /* indica el valor de la propietat position i més propietats, si fan falta */
+}
+
+ul#menu li {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+}
+
+div {
+    /* indica el valor de la propietat position i més propietats, si fan falta */
+    border: 1px solid green;
+}
+
+div>h1 {
+    /* indica el valor de la propietat position i més propietats, si fan falta */
+    color: white;
+    font-size: 2em;
+}
