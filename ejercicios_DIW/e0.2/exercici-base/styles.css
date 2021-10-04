@@ -7,28 +7,48 @@ body {
 
 header {
     /* indica el valor de la propietat position i més propietats, si fan falta */
+    background-color: rgb(154,205,50);
+    margin-bottom: 25px;
+    margin-top: 25px;
+
 }
 
 header img {
     /* indica el valor de la propietat position i més propietats, si fan falta */
+    display: inline;
+    position: relative;
+    top: 50px;
+    background-color: rgb(154,205,50);
+    margin-left: 25px;
 }
 
 ul#menu {
     /* indica el valor de la propietat position i més propietats, si fan falta */
+    position: fixed;
+    left: 500px;
+    top: 50px;
+    float: inherit;
+
 }
 
 ul#menu li {
     background-color: black;
     color: white;
     font-size: 16px;
+    display: inline;
+    padding: 10px;
+    margin: 5px;
+
+
 }
 
 div {
     /* indica el valor de la propietat position i més propietats, si fan falta */
     border: 1px solid green;
+    display: block;
 }
 
-div>h1 {
+    h1 {
     /* indica el valor de la propietat position i més propietats, si fan falta */
     color: white;
     font-size: 2em;
