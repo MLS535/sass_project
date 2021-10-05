@@ -65,12 +65,52 @@ function functionCuatro(){
         document.getElementById("resultado").innerHTML=resultado;
     }
 
-    function functionSeis(){
+ //correcto
+    function functionSiete(){
         let valor =  document.getElementById("name").value;
-
+        let resultado= valor.replaceAll( "la", "*");
         document.getElementById("resultado").innerHTML=resultado;
     }
 
+    function functionSeis(){
+        let valor =  document.getElementById("name").value;
+        let resultado= valor.replaceAll( "la", "*");
+        document.getElementById("resultado").innerHTML=resultado;
+    }
+//correcto
+    function functionNueve(){
+        let valor =  document.getElementById("name").value;
+        let resultado= valor.replaceAll( " ", "");
+        document.getElementById("resultado").innerHTML=resultado;
+    }
+
+    function functionDiez(){
+        let valor =  document.getElementById("name").value;
+        let resultado= valor.replaceAll( " ", "-");
+        document.getElementById("resultado").innerHTML=resultado;
+    }
+//correcto
+    function functioncatorce(){
+        let valor =  document.getElementById("name").value;
+        if ( !isNaN(valor) ){
+            document.getElementById("resultado").innerHTML="El input es un numero";
+        }else
+            document.getElementById("resultado").innerHTML="El input no es numero";
+    }
+//correcto
+    function functionquince(){
+        let valor =  document.getElementById("name").value;
+        let resultado = Math.trunc(valor);
+        document.getElementById("resultado").innerHTML=resultado;
+    }
+//correcto
+    function functiondieciseis(){
+        let x =  document.getElementById("name").value;
+        let decimals = x - Math.floor(x);
+        let decimalPlaces = x.toString().split('.')[1].length;
+        let resultado = decimals.toFixed(decimalPlaces);
+        document.getElementById("resultado").innerHTML=resultado;
+    }
 </script>
 </body>
 </html>
