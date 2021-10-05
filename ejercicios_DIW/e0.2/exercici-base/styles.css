@@ -17,16 +17,16 @@ header img {
     /* indica el valor de la propietat position i més propietats, si fan falta */
     display: inline;
     position: relative;
-    top: 50px;
+    top: 15px;
     background-color: rgb(154,205,50);
     margin-left: 25px;
 }
 
 ul#menu {
     /* indica el valor de la propietat position i més propietats, si fan falta */
-    position: fixed;
+    position: absolute;
     left: 500px;
-    top: 50px;
+    top: 55px;
     float: inherit;
 
 }
@@ -35,21 +35,36 @@ ul#menu li {
     background-color: black;
     color: white;
     font-size: 16px;
-    display: inline;
+    display: inline-block;
     padding: 10px;
     margin: 5px;
 
 
 }
 
-div {
+main {
     /* indica el valor de la propietat position i més propietats, si fan falta */
-    border: 1px solid green;
-    display: block;
+    border: 3px solid green;
+    display: flex;
+    margin-right: 300px;
+    margin-left: 50px;
+    margin-top: 70px;
+    position: relative;
+
+}
+
+
+#scissors{
+    position: absolute;
+    left: 310px;
+    z-index: -1;
 }
 
     h1 {
     /* indica el valor de la propietat position i més propietats, si fan falta */
     color: white;
     font-size: 2em;
+        position: absolute;
+        left: 450px;
+        top: 200px;
 }
