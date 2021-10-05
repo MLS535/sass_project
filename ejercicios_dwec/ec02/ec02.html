@@ -5,6 +5,72 @@
     <title>EJERCICIO 2</title>
 </head>
 <body>
+<label for="name">Inserte aquí una frase:</label>
 
+<input type="text" id="name" name="name" required>
+
+<button onclick="functionUno()">String buit</button>
+<button onclick="functiondos()">Invertir string</button>
+<button onclick="functiontres()">Quantes a</button>
+<button onclick="functionCuatro()">Abans a</button>
+<button onclick="functionCinco()">Primera i darrera a</button>
+<button onclick="functionSeis()">Esborra substring</button>
+<button onclick="functionSiete()">Substitueix substring </button>
+<button onclick="functionOcho()">Cap i cua</button>
+<button onclick="functionNueve()">No espais</button>
+<button onclick="functionDiez()">frase amb guions</button>
+<button onclick="functionOnce()">Acronim </button>
+<button onclick="functionDoce()">Email  </button>
+<button onclick="functionTrece()">Numero signe  </button>
+<button onclick="functioncatorce()">Es número  </button>
+<button onclick="functionquince()">Número part entera  </button>
+<button onclick="functiondieciseis()">Numero part decimals  </button>
+<button onclick="functiondiecisiete()">xx_amb 3 decimals  </button>
+<p id="resultado"></p>
+<script>
+    //correcto
+function functionUno(){
+  let valor =  document.getElementById("name").value;
+  //let result=   document.getElementById("resultado").innerHTML=valor;
+  if ( valor == 0 ){
+      document.getElementById("resultado").innerHTML="El input está vacio";
+  }else
+      document.getElementById("resultado").innerHTML="El input no está vacio";
+}
+
+//correcto
+function functiondos(){
+    let valor =  document.getElementById("name").value;
+    let resultado= String(valor.split("").reverse().join(""));
+  return document.getElementById("resultado").innerHTML=resultado;
+}
+
+//correcto case sensitive: new RegExp( "a", "gi" )
+function functiontres(){
+    let valor =  document.getElementById("name").value;
+    let resultado= (valor.split(new RegExp( "a", "gi" )).length-1);
+    document.getElementById("resultado").innerHTML=resultado;
+}
+
+//
+function functionCuatro(){
+    let valor =  document.getElementById("name").value;
+
+    document.getElementById("resultado").innerHTML=resultado;
+}
+
+    function unctionCinco(){
+        let valor =  document.getElementById("name").value;
+
+        document.getElementById("resultado").innerHTML=resultado;
+    }
+
+    function functionSeis(){
+        let valor =  document.getElementById("name").value;
+
+        document.getElementById("resultado").innerHTML=resultado;
+    }
+
+</script>
 </body>
 </html>
