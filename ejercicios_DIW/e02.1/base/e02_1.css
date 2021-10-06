@@ -25,14 +25,16 @@ main {
 .box-1 {
     background-color: coral;
     /********* ADD YOUR CODE  HERE **********/
-
-
+    font-size: 2.5em;
+    width: 90vw;
+    background-color: red;
     /********* END OF YOUR CODE **********/
 }
 .box-2 {
     background-color: cyan;
     /********* ADD YOUR CODE  HERE **********/
-
+    font-size: 3.75rem;
+    height: 40vh;
 
     /********* END OF YOUR CODE **********/
 }
@@ -40,7 +42,8 @@ main {
 .box-3 {
     background-color: darkseagreen;
     /********* ADD YOUR CODE  HERE **********/
-
+    font-size: 3rem;
+    width: 50vmax;
 
     /********* END OF YOUR CODE **********/
 }
