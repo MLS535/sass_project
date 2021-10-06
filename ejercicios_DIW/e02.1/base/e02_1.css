@@ -20,7 +20,7 @@ main {
     background-color: blanchedalmond;
 }
 
-/*///////////////////*/
+/*Hay que hacer una regla de tres en base al * que es 12px para calcular el rem */
 
 .box-1 {
     background-color: coral;
