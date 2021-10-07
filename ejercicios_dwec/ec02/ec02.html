@@ -14,8 +14,8 @@
 <button onclick="functiontres()">Quantes a</button>
 <button onclick="functionCuatro()">Abans a</button>
 <button onclick="functionCinco()">Primera i darrera a</button>
-<button onclick="functionSeis()">Esborra substring</button>
-<button onclick="functionSiete()">Substitueix substring </button>
+<button onclick="functionSeis()">Substitueix substring </button>
+<button onclick="functionSiete()">Esborra substring</button>
 <button onclick="functionOcho()">Cap i cua</button>
 <button onclick="functionNueve()">No espais</button>
 <button onclick="functionDiez()">frase amb guions</button>
@@ -52,43 +52,87 @@ function functiontres(){
     document.getElementById("resultado").innerHTML=resultado;
 }
 
-//
+//correcto
 function functionCuatro(){
     let valor =  document.getElementById("name").value;
-
+    let indice= valor.indexOf("a");
+    let resultado= valor.substring(0, indice)
     document.getElementById("resultado").innerHTML=resultado;
 }
-
-    function unctionCinco(){
+//todo no funciona
+    function functionCinco(){
         let valor =  document.getElementById("name").value;
-
+        let indice= valor.indexOf("a");
+        let posfinal = valor.lastIndexOf("a");
+        let primercaracter= valor.charAt(indice.length);
+        let ultimocaracter= valor.charAt(posfinal.length -1)
+        let resultado= "El primer caracter está en "+ primercaracter + " y el segundo en "+ ultimocaracter;
         document.getElementById("resultado").innerHTML=resultado;
     }
 
  //correcto
-    function functionSiete(){
-        let valor =  document.getElementById("name").value;
-        let resultado= valor.replaceAll( "la", "*");
-        document.getElementById("resultado").innerHTML=resultado;
-    }
-
     function functionSeis(){
         let valor =  document.getElementById("name").value;
         let resultado= valor.replaceAll( "la", "*");
         document.getElementById("resultado").innerHTML=resultado;
     }
 //correcto
+    function functionSiete(){
+        let valor =  document.getElementById("name").value;
+        let resultado= valor.replaceAll( "la", "");
+        document.getElementById("resultado").innerHTML=resultado;
+    }
+//todo no funciona
+    function functionOcho(){
+        let valor =  document.getElementById("name").value;
+
+        document.getElementById("resultado").innerHTML=resultado;
+    }
+    //correcto
     function functionNueve(){
         let valor =  document.getElementById("name").value;
         let resultado= valor.replaceAll( " ", "");
         document.getElementById("resultado").innerHTML=resultado;
     }
-
+//funciona
     function functionDiez(){
         let valor =  document.getElementById("name").value;
         let resultado= valor.replaceAll( " ", "-");
         document.getElementById("resultado").innerHTML=resultado;
     }
+//correcto
+    function functionOnce(){
+        let valor =  document.getElementById("name").value;
+        let resultado= valor.match( /\b(\w)/g).join('');
+        document.getElementById("resultado").innerHTML=resultado;
+    }
+
+    //correcto
+    function functionDoce() {
+        var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        let valor = document.getElementById ( "name" ).value;
+        if ( valor.match ( validRegex ) ) {
+            let resultado = "Email Valido!";
+            document.getElementById ( "resultado" ).innerHTML = resultado;
+            return true;
+
+        } else {
+            let resultado = "Email incorrecto!";
+            document.getElementById ( "resultado" ).innerHTML = resultado;
+        }
+    }
+
+    //correcto
+    function functionTrece(){
+        let valor =  document.getElementById("name").value;
+        let resultado= Math.sign(valor);
+        if ( resultado=== 0 || isNaN(resultado) ){
+            return document.getElementById ( "resultado" ).innerHTML = Number(resultado);
+
+        }
+        return document.getElementById ( "resultado" ).innerHTML = resultado > 0 ? "El numero es positivo" : "El numero es negativo";
+    }
+
 //correcto
     function functioncatorce(){
         let valor =  document.getElementById("name").value;
@@ -97,6 +141,7 @@ function functionCuatro(){
         }else
             document.getElementById("resultado").innerHTML="El input no es numero";
     }
+
 //correcto
     function functionquince(){
         let valor =  document.getElementById("name").value;
@@ -109,6 +154,13 @@ function functionCuatro(){
         let decimals = x - Math.floor(x);
         let decimalPlaces = x.toString().split('.')[1].length;
         let resultado = decimals.toFixed(decimalPlaces);
+        document.getElementById("resultado").innerHTML=resultado;
+    }
+//correcto
+    function functiondiecisiete(){
+        let valor =  document.getElementById("name").value;
+        let dividir = 19 / valor;
+        let resultado= "El resultado de dividir 19 por "+valor +" es igual a "+ dividir.toFixed(3);
         document.getElementById("resultado").innerHTML=resultado;
     }
 </script>
