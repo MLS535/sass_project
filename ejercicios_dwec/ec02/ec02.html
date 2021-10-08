@@ -16,7 +16,7 @@
 <button onclick="functionCinco()">Primera i darrera a</button>
 <button onclick="functionSeis()">Substitueix substring </button>
 <button onclick="functionSiete()">Esborra substring</button>
-<button onclick="functionOcho()">Cap i cua</button>
+<button onclick="functionOcho()"> Capi cua</button>
 <button onclick="functionNueve()">No espais</button>
 <button onclick="functionDiez()">frase amb guions</button>
 <button onclick="functionOnce()">Acronim </button>
@@ -28,7 +28,7 @@
 <button onclick="functiondiecisiete()">xx_amb 3 decimals  </button>
 <p id="resultado"></p>
 <script>
-    //correcto
+    //correcto String buit
 function functionUno(){
   let valor =  document.getElementById("name").value;
   //let result=   document.getElementById("resultado").innerHTML=valor;
@@ -38,76 +38,77 @@ function functionUno(){
       document.getElementById("resultado").innerHTML="El input no está vacio";
 }
 
-//correcto
+//correcto Invertir string
 function functiondos(){
     let valor =  document.getElementById("name").value;
     let resultado= String(valor.split("").reverse().join(""));
   return document.getElementById("resultado").innerHTML=resultado;
 }
 
-//correcto case sensitive: new RegExp( "a", "gi" )
+//correcto case sensitive: new RegExp( "a", "gi" ) Quantes a
 function functiontres(){
     let valor =  document.getElementById("name").value;
     let resultado= (valor.split(new RegExp( "a", "gi" )).length-1);
     document.getElementById("resultado").innerHTML=resultado;
 }
 
-//correcto
+//correcto Abans a
 function functionCuatro(){
     let valor =  document.getElementById("name").value;
     let indice= valor.indexOf("a");
     let resultado= valor.substring(0, indice)
     document.getElementById("resultado").innerHTML=resultado;
 }
-//todo no funciona
+//FUNCIONA Primera i darrera a
     function functionCinco(){
         let valor =  document.getElementById("name").value;
-        let indice= valor.indexOf("a");
-        let posfinal = valor.lastIndexOf("a");
-        let primercaracter= valor.charAt(indice.length);
-        let ultimocaracter= valor.charAt(posfinal.length -1)
-        let resultado= "El primer caracter está en "+ primercaracter + " y el segundo en "+ ultimocaracter;
-        document.getElementById("resultado").innerHTML=resultado;
+        for (let i = 0; i < valor.length; i++) {
+            if ( valor.charAt(i) === "a" ){
+                document.getElementById("resultado").innerHTML = "La primera posición está en "+ valor.indexOf("a")+ "Y la última posición es" +
+                    valor.lastIndexOf("a", valor.length);
+            }
+        }
     }
 
- //correcto
+ //correcto Substitueix substring
     function functionSeis(){
         let valor =  document.getElementById("name").value;
         let resultado= valor.replaceAll( "la", "*");
         document.getElementById("resultado").innerHTML=resultado;
     }
-//correcto
+//correcto Esborra substring
     function functionSiete(){
         let valor =  document.getElementById("name").value;
         let resultado= valor.replaceAll( "la", "");
         document.getElementById("resultado").innerHTML=resultado;
     }
-//todo no funciona
+//Capi cua
     function functionOcho(){
         let valor =  document.getElementById("name").value;
-
+        let arrayelvalor= valor.split("");
+        let resultado= "La palabra capicua es la siguiente "+ arrayelvalor[0]+valor+arrayelvalor[valor.length-1];
         document.getElementById("resultado").innerHTML=resultado;
     }
-    //correcto
+    //correcto No espais
     function functionNueve(){
         let valor =  document.getElementById("name").value;
         let resultado= valor.replaceAll( " ", "");
         document.getElementById("resultado").innerHTML=resultado;
     }
-//funciona
+//funciona frase amb guions
     function functionDiez(){
         let valor =  document.getElementById("name").value;
         let resultado= valor.replaceAll( " ", "-");
         document.getElementById("resultado").innerHTML=resultado;
     }
-//correcto
+//correcto acronim
     function functionOnce(){
         let valor =  document.getElementById("name").value;
         let resultado= valor.match( /\b(\w)/g).join('');
         document.getElementById("resultado").innerHTML=resultado;
     }
 
-    //correcto
+    //todo Email
     function functionDoce() {
         var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
         let valor = document.getElementById ( "name" ).value;
@@ -122,7 +123,7 @@ function functionCuatro(){
         }
     }
 
-    //correcto
+    //correcto Numero Signe
     function functionTrece(){
         let valor =  document.getElementById("name").value;
         let resultado= Math.sign(valor);
@@ -133,7 +134,7 @@ function functionCuatro(){
         return document.getElementById ( "resultado" ).innerHTML = resultado > 0 ? "El numero es positivo" : "El numero es negativo";
     }
 
-//correcto
+//correcto Es numero
     function functioncatorce(){
         let valor =  document.getElementById("name").value;
         if ( !isNaN(valor) ){
@@ -142,13 +143,13 @@ function functionCuatro(){
             document.getElementById("resultado").innerHTML="El input no es numero";
     }
 
-//correcto
+//correcto Número part entera
     function functionquince(){
         let valor =  document.getElementById("name").value;
         let resultado = Math.trunc(valor);
         document.getElementById("resultado").innerHTML=resultado;
     }
-//correcto
+//correcto Numero part decimal
     function functiondieciseis(){
         let x =  document.getElementById("name").value;
         let decimals = x - Math.floor(x);
@@ -156,7 +157,7 @@ function functionCuatro(){
         let resultado = decimals.toFixed(decimalPlaces);
         document.getElementById("resultado").innerHTML=resultado;
     }
-//correcto
+//correcto xx_amb 3 decimals
     function functiondiecisiete(){
         let valor =  document.getElementById("name").value;
         let dividir = 19 / valor;
