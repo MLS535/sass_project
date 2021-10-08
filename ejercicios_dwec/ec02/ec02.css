@@ -1,0 +1,16 @@
+
+.header{
+        font-family: "Times New Roman";
+        border-style: solid;
+    background-color: rgb(253,237,215);
+        display: flex;
+        padding: 1vw;
+    }
+
+.main{
+    border: 2px solid black;
+    flex: 1 1 auto;
+    margin: 2em;
+    padding: 1vw;
+    background-color: rgb(253,237,215);
+}

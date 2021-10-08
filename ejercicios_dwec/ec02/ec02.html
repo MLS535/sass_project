@@ -3,30 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <title>EJERCICIO 2</title>
+    <link rel="stylesheet" type="text/css" href="ec02.css" />
 </head>
 <body>
+<div class="header">
 <label for="name">Inserte aquí una frase:</label>
+<input type="text" id="name" name="name" required size="50">
+</div>
 
-<input type="text" id="name" name="name" required>
-
+<div class="main">
 <button onclick="functionUno()">String buit</button>
+
 <button onclick="functiondos()">Invertir string</button>
+
 <button onclick="functiontres()">Quantes a</button>
+
 <button onclick="functionCuatro()">Abans a</button>
+
 <button onclick="functionCinco()">Primera i darrera a</button>
+
 <button onclick="functionSeis()">Substitueix substring </button>
+
 <button onclick="functionSiete()">Esborra substring</button>
+
 <button onclick="functionOcho()"> Capi cua</button>
+
 <button onclick="functionNueve()">No espais</button>
+
 <button onclick="functionDiez()">frase amb guions</button>
+
 <button onclick="functionOnce()">Acronim </button>
+
 <button onclick="functionDoce()">Email  </button>
+
 <button onclick="functionTrece()">Numero signe  </button>
+
 <button onclick="functioncatorce()">Es número  </button>
+
 <button onclick="functionquince()">Número part entera  </button>
+
 <button onclick="functiondieciseis()">Numero part decimals  </button>
+
 <button onclick="functiondiecisiete()">xx_amb 3 decimals  </button>
+
+</div>
+
+<div class="main">
+<h2>Resultado: </h2>
+
 <p id="resultado"></p>
+</div>
+
 <script>
     //correcto String buit
 function functionUno(){
