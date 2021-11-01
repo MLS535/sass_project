@@ -11,6 +11,8 @@ h4 {
 
 .container {
   background-color: black;
+  display: flex;
+
   width: 450px;
   height: 300px;
   margin: 20px 2px;
@@ -32,12 +34,14 @@ CONTAINER C01
 **/
 .c01 {
   /********* ADD YOUR CODE  HERE **********/
-
+  align-items: center;
+  justify-content: center;
   
   /********* END OF YOUR CODE **********/
 }
 .c01 div {
   background-color: red;
+
 }
 
 /**
@@ -45,7 +49,9 @@ CONTAINER C02
 **/
 .c02 {
   /********* ADD YOUR CODE  HERE **********/
-
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   
 
 
@@ -60,7 +66,9 @@ CONTAINER C03
 **/
 .c03 {
   /********* ADD YOUR CODE  HERE **********/
-
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: flex-end;
   
 
 
@@ -75,12 +83,11 @@ CONTAINER C04
 **/
 .c04 {
   /********* ADD YOUR CODE  HERE **********/
-
-  
-
+  flex-flow: row wrap;
   
   /********* END OF YOUR CODE **********/
 }
+
 .c04 div {
   background-color: blue;
 }
@@ -88,13 +95,21 @@ CONTAINER C04
 /**
 CONTAINER C05
 **/
+.c05{
+  align-items: center;
+  justify-content: center;
+}
 .c05 div {
   background-color: orangered;
   padding: 20px 40px;
   margin: 3px;
+
+
 }
 /********* ADD YOUR CODE  HERE **********/
-
+.c05 div:nth-child(1) {
+  flex-grow: 20;
+}
 
 /********* END OF YOUR CODE **********/
 
@@ -118,16 +133,30 @@ CONTAINER C06
 /********* END OF YOUR CODE **********/
 
 /**
+
+
 CONTAINER C07
 **/
+.c07{
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
+}
+
 .c07 div {
   background-color: cyan;
   color: black;
   padding: 20px 40px;
   margin: 3px;
+  flex-basis: 90px;
+  flex-shrink: 25;
+
 }
 /********* ADD YOUR CODE  HERE **********/
-
+.c07 div:nth-child(1) {
+  flex-basis: 150px;
+  flex-grow: 10;
+}
 
 
 
