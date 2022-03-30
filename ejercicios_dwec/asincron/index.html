@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+
+    //crear objeto xhr
+    const xhr = new XMLHttpRequest();
+
+    //CallBack
+    xhr.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+            //imprimir respuesta
+            let data = JSON.parse(this.responseText);
+            //console.info(this.responseText);
+const xhr2 = new XMLHttpRequest();
+
+xhr2.onreadystatechange = function () {
+    if ( this.readyState == 4 && this.status == 200 ) {
+        //imprimir respuesta
+        let data2 = JSON.parse ( this.responseText );
+        console.log ( data2.authora)
+    }
+}
+        xhr2.open('GET', 'json2.json');
+        xhr2.send();
+    }
+    }
+    //abrir conexion
+    xhr.open('GET', 'json.json');
+    xhr.send();
+</script>
+</html>

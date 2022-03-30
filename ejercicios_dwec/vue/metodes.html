@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Vue  3  CDN -->
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+<div id="app">{{ `${imprimeSaludo()} ${imprimirNombre('Pepe')}`}}</div>
+
+</body>
+<script>
+    const app = {
+        data() {
+            return {
+                //Permite meter solo variables
+                saludo: 'Bon dia!',
+            }
+        },
+        //Aquí podemos añadir metodos
+        methods: {
+            imprimeSaludo() {
+                alert('hola');
+                return this.saludo
+            },
+            imprimirNombre(name){
+                if ( name.length<10 ){
+                    return name
+                }else{
+                    return 'Nom massa llarg'
+                }
+            }
+        },
+    }
+    Vue.createApp(app).mount('#app')
+</script>
+</html>

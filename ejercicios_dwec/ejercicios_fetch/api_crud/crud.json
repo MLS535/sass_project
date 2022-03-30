@@ -1,0 +1,44 @@
+{
+  "animals": [
+    {
+      "id": 1,
+      "name": "Nala",
+      "species": "Wolf",
+      "ferociousness": "Low",
+      "hobby": "Hunt",
+      "image": "https://www.collinsdictionary.com/images/thumb/cat_156310937_250.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Bobby",
+      "species": "dog",
+      "ferociousness": "Low",
+      "hobby": "Eat food",
+      "image": "https://www.collinsdictionary.com/images/thumb/cat_156310937_250.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Rita",
+      "species": "Bird",
+      "ferociousness": "High",
+      "hobby": "Fly",
+      "image": "https://www.collinsdictionary.com/images/thumb/cat_156310937_250.jpg"
+    },
+    {
+      "name": "ddeed",
+      "species": "dedede",
+      "ferociousness": "ddede",
+      "hobby": "deeede",
+      "image": "https://www.collinsdictionary.com/images/thumb/cat_156310937_250.jpg",
+      "id": 6
+    },
+    {
+      "name": "check",
+      "species": "check",
+      "ferociousness": "check",
+      "hobby": "check",
+      "image": "https://www.collinsdictionary.com/images/thumb/cat_156310937_250.jpg",
+      "id": 7
+    }
+  ]
+}

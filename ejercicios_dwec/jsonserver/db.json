@@ -1,0 +1,29 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "cambis",
+      "author": "typicod"
+    },
+    {
+      "title": "rest test",
+      "author": "toni",
+      "id": 2
+    },
+    {
+      "title": "add test",
+      "author": "mai",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

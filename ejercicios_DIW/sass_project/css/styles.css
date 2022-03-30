@@ -1,0 +1,60 @@
+body {
+  background-color: #FFEA48;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header nav h1 {
+  font-size: 3vw;
+}
+header nav h1 a {
+  text-decoration: none;
+  color: black;
+  align-self: start;
+}
+header nav ul {
+  display: flex;
+  align-content: center;
+}
+header nav ul li {
+  color: #aaa;
+  list-style: none;
+  font-size: 1vw;
+  margin: 1vw;
+  background-color: white;
+  padding: 1vw;
+  border-radius: 1vw;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #aaa;
+}
+header nav ul li a .btn .btn-cta {
+  background-color: #FFEA48;
+}
+
+h2 {
+  font-weight: lighter;
+  font-size: 24px;
+}
+
+.container {
+  background-color: white;
+  margin: 100px auto;
+  width: 1280px;
+  padding: 50px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-image: url("../fondo.jpg");
+  background-size: 100% 100%;
+  border-radius: 1vw;
+}
+
+/*# sourceMappingURL=styles.css.map */

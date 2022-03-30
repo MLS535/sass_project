@@ -2,7 +2,7 @@
 /shelf/
 /workspace.xml
 # Datasource local storage ignored files
-/../../../../../../:\FP\Segundo año\DIW_DWEC_MAITE\ejercicios_dwec\.idea/dataSources/
+/../../../../../../../:\FP\Segundo año\DIW_DWEC_MAITE\ejercicios_dwec\fetch-exam-practice\.idea/dataSources/
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/

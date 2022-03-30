@@ -1,0 +1,83 @@
+
+$bg-color: #FFEA48;
+$primary-color: black;
+$secundary-color: white;
+$font-color: #aaa;
+$box-shadow: 0 2px 10px 0 rgba(0,0,0,0.6);
+$limit: 1;
+
+$unit: 8px;
+
+@function size($value){
+  @return $value *$unit;
+}
+
+body{
+  background-color: $bg-color;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica,sans-serif;
+}
+
+header{
+
+
+  nav {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    h1{
+      font-size: 3vw;
+      a{
+        text-decoration: none;
+        color: $primary-color;
+        align-self: start;
+      }
+    }
+    ul{
+      display: flex;
+      align-content: center;
+      li{
+        color: $font-color;
+        list-style: none;
+        font-size: 1vw;
+        margin: 1vw;
+        background-color: $secundary-color;
+        padding: 1vw;
+        border-radius: 1vw;
+        a{
+          text-decoration: none;
+          color: $font-color;
+          .btn .btn-cta{
+            background-color: $bg-color;
+          }
+        }
+
+      }
+  }
+
+  }
+}
+
+
+h2{
+  font-weight: lighter;
+  font-size: size(3);
+}
+
+.container{
+  background-color: $secundary-color;
+  margin: 100px auto;
+  width: 1280px;
+  padding: 50px;
+  box-shadow: 0 0 20px  rgba(0,0,0,0.1);
+  background-image: url("../fondo.jpg");
+  background-size: 100% 100%;
+  border-radius: 1vw;
+}
+
+.main-screen{
+
+}

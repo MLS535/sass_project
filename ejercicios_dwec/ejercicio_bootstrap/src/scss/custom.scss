@@ -1,0 +1,15 @@
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+$light: #F5F5F5;
+
+
+$theme-colors: (
+       'light': $light
+);
+
+.main-image{
+  height: 70vh;
+  width: 70vw;
+  background-image: url('../img/the-beacon.jpg');
+  background-size: cover;
+}
