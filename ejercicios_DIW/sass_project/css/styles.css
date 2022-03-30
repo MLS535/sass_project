@@ -37,7 +37,7 @@ header nav ul li a {
   text-decoration: none;
   color: #aaa;
 }
-header nav ul li a .btn .btn-cta {
+header nav ul li:hover {
   background-color: #FFEA48;
 }
 
@@ -55,6 +55,19 @@ h2 {
   background-image: url("../fondo.jpg");
   background-size: 100% 100%;
   border-radius: 1vw;
+}
+
+.btn.btn-cta {
+  background-color: black;
+  color: white;
+}
+.btn.btn-cta:hover {
+  background-color: white;
+  color: black;
+}
+.btn:hover {
+  background-color: black;
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
